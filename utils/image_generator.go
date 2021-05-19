@@ -65,6 +65,10 @@ func (this *ImageGenerator) Generate() error {
 	if err != nil {
 		return err
 	}
+	err = this.resize(60)
+	if err != nil {
+		return err
+	}
 	err = this.resize(76)
 	if err != nil {
 		return err
